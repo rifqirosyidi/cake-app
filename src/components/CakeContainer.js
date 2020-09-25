@@ -6,7 +6,7 @@ function CakeContainer(props) {
   console.log(props);
   return (
     <div>
-      <h2>Number of Cake {props.numCakes}</h2>
+      <h2>Number of Cake - {props.numCakes}</h2>
       <button onClick={props.buyCake}>Buy Cake</button>
     </div>
   );
@@ -14,7 +14,7 @@ function CakeContainer(props) {
 
 const mapStateToProps = (state) => {
   return {
-    numCakes: state.numCakes,
+    numCakes: state.cake.numCakes,
   };
 };
 
